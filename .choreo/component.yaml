@@ -5,6 +5,7 @@ endpoints:
    type: REST
    networkVisibilities:
     - Organization
+    - Public
    service:
     basePath: /
     port: 9090
