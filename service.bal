@@ -5,10 +5,9 @@ type Greeting record {|
     string content;
 |};
 
-configurable int port = 9090;
 configurable Greeting greeting = ?;
 
-service http:Service / on new http:Listener(port) {
+service http:Service / on new http:Listener(9090) {
     resource function post greeting() returns string {
         string message = string `Hello ${greeting.to}! ${greeting.content}`;
         return message;
