@@ -1,0 +1,11 @@
+schemaVersion: 1.2
+endpoints:
+  - name: greeter_sample
+    displayName: balerina Greeter Sample
+    service:
+      basePath: /
+      port: 9090
+    type: REST
+    networkVisibilities:
+      - Organization
+    schemaFilePath: openapi.yaml
