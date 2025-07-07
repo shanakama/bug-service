@@ -1,6 +1,6 @@
 schemaVersion: 1.2
 endpoints:
-  - name: greeter_sample
+  - name: greeter_sample1
     displayName: balerina Greeter Sample
     service:
       basePath: /
